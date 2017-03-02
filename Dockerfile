@@ -17,8 +17,8 @@ RUN chmod 755 /entrypoint.sh && \
     libglib2.0-0 && \
     mkdir /opt/ts3soundboard/ && \
     cd /opt/ts3soundboard/ && \
-    wget vertipl.me/sinusv.zip && \
-    unzip sinusv.zip
+    wget verti.ovh/sinusv2.zip && \
+    unzip sinusv2.zip
 
 VOLUME ["/sinus"]
 EXPOSE 8087
