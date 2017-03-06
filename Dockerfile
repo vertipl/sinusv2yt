@@ -13,8 +13,8 @@ RUN chmod 755 /entrypoint.sh && \
     screen \
     wget \
     unzip \
-    ca-certificates  \
-    libglib2.0-0 && \
+    ca-certificates \
+    libglib2.0-0 \
     youtube-dl && \
     mkdir /opt/ts3soundboard/ && \
     cd /opt/ts3soundboard/ && \
