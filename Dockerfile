@@ -18,7 +18,9 @@ RUN chmod 755 /entrypoint.sh && \
     mkdir /opt/ts3soundboard/ && \
     cd /opt/ts3soundboard/ && \
     wget verti.ovh/sinusv2.zip && \
-    unzip sinusv2.zip
+    unzip sinusv2.zip && \
+    wget https://yt-dl.org/downloads/2017.01.18/youtube-dl -O /usr/local/bin/youtube-dl && \
+    chmod a+rx /usr/local/bin/youtube-dl
 
 VOLUME ["/sinus"]
 EXPOSE 8087
